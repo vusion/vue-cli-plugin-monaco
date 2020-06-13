@@ -1,0 +1,54 @@
+{
+  "name": "vue-cli-plugin-monaco",
+  "description": "Vue CLI Plugin to integrate [Monaco Editor Webpack Loader Plugin](https://github.com/Microsoft/monaco-editor-webpack-plugin)",
+  "version": "0.1.0",
+  "author": "Forrest <rainforest92@126.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:service && npm run test:unit",
+    "test:service": "mocha --no-timeout test/service/*.spec.js",
+    "test:unit": "mocha --timeout 60000 test/unit/**/*.spec.js"
+  },
+  "license": "MIT",
+  "repository": "vusion/vue-cli-plugin-monaco",
+  "homepage": "https://github.com/vusion/vue-cli-plugin-monaco",
+  "bugs": "https://github.com/vusion/vue-cli-plugin-monaco/issues",
+  "keywords": [
+    "vue",
+    "cli",
+    "plugin",
+    "monaco"
+  ],
+  "tags": [
+    "vue",
+    "cli",
+    "plugin",
+    "monaco"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "monaco-editor-webpack-plugin": "^1.9.0"
+  },
+  "devDependencies": {
+    "@vue/cli-test-utils": "^4.2.3",
+    "chai": "^4.2.0",
+    "css-loader": "*",
+    "eslint": "^6.0.0",
+    "eslint-config-vusion": "^3.0.2",
+    "husky": "^3.0.0",
+    "mocha": "^7.1.1",
+    "vusion-hooks": "^0.3.0",
+    "webpack": "^4.35.3"
+  },
+  "peerDependencies": {
+    "webpack": "^4.35.3",
+    "cloud-ui.vusion": ">=0.6.18"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "node node_modules/vusion-hooks/pre-commit"
+    }
+  }
+}
