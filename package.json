@@ -1,7 +1,7 @@
 {
   "name": "vue-cli-plugin-monaco",
   "description": "Vue CLI Plugin to integrate Monaco Editor Webpack Loader Plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Forrest <rainforest92@126.com>",
   "main": "index.js",
   "scripts": {
